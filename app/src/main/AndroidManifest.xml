@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
+        android:name=".data.firebase.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +17,37 @@
         android:theme="@style/Theme.Mira"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".view.resultDetail.ResultDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.formReservation.FormReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.consultation.ConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.article.ArticleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.history.HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.signup.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +55,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".data.service.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

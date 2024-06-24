@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color> <!-- TEXT/ICONS -->
+    <color name="black">#000000</color> <!-- TEXT/ICONS -->
+    <color name="light_blue">#5EC6DE</color> <!-- ACCENT COLOR -->
+    <color name="dark_blue">#303F9F</color> <!-- DARK PRIMARY COLOR -->
+    <color name="light_gray">#C5CAE9</color> <!-- LIGHT PRIMARY COLOR -->
+    <color name="gray">#212121</color> <!-- PRIMARY TEXT -->
+    <color name="mid_gray">#757575</color> <!-- SECONDARY TEXT -->
+    <color name="blue">#3F51B5</color> <!-- PRIMARY COLOR -->
+    <color name="yello">#FFEB3B</color> <!-- PRIMARY COLOR -->
+    <color name="divider_gray">#BDBDBD</color> <!-- DIVIDER COLOR -->
+    <color name="read_background">#E3E0E0</color>
+    <color name="unread_background">#FFFFFF</color>
+    <color name="background_light">#f8f8f8</color>
+    <color name="success_light">#76dd66</color>
+    <color name="navy">#2D3D4F</color>
+    <color name="firebase_yellow">#FFCA28</color>
+    <color name="firebase_amber">#FFA000</color>
+    <color name="firebase_orange">#F57C00</color>
+    <color name="firebase_blue">#039BE5</color>
+    <color name="firebase_navy">#2C384A</color>
+    <color name="firebase_gray">#ECEFF1</color>
 </resources>
